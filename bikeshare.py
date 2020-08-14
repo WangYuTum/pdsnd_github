@@ -6,12 +6,10 @@ import sys
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
-
 MONTHS = ['january', 'february', 'march', 'april', 'may', 'june', 'all']
 CITIES = ['chicago', 'new york city', 'washington']
 DAYS = ['monday','tuesday','wednesday','thursday','friday','saturday','sunday', 'all']
 FILTERS = ['month', 'day', 'both', 'none']
-
 
 def get_city_filter():
     """
@@ -20,7 +18,6 @@ def get_city_filter():
     Returns:
         (str) city - name of the city to filter by
     """
-
 
     valid = False
     city = None
@@ -129,7 +126,7 @@ def get_input_int(lower, upper):
         (int) lower - the lower bound of the integer
         (int) higher - the upper bound of the integer
     Return:
-        (int) res - the acquired integer from the user which satisfies the specified boundaries
+        (int) step - the acquired integer from the user which satisfies the specified boundaries
     """
 
     valid = False
