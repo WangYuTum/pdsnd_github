@@ -278,9 +278,14 @@ def load_data(city, month, day):
         df - Pandas DataFrame containing city data filtered by month and day
     """
 
-    # # load data file into a dataframe
-    df = pd.read_csv(CITY_DATA[city])
-    df = df.iloc[:, 1:] # ignore the first unnamed column
+    # load data file into a dataframe
+    try:
+        df = pd.read_csv(CITY_DATA[city])
+    except Exception as e:
+        print('Load data failed. {}'.format(e))
+
+    # ignore the first unnamed column
+    df = df.iloc[:, 1:] 
 
     # convert the Start Time column to datetime
     df['Start Time'] = pd.to_datetime(df['Start Time'])
