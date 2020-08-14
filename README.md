@@ -1,12 +1,17 @@
-## Programming for Data Science Nanodegree Python Project
+# Programming for Data Science Nanodegree Subproject
+The repository contains the project information of the **python project** from Udacity Nanodegree 
+**[Programming for Data Science with Python](https://www.udacity.com/course/programming-for-data-science-nanodegree--nd104)**.
+
+### Project - Explore US Bikeshare Data
 The goal of the project is to investivate **Bike Share Data** provided by **[Motivate](motivateco.com)**.
 For simplicity, we will only explore data for the first six months of 2017 from the following cities:
 - Chicago
 - New York City
 - Washington, DC
 
-The project implements an interactive script that let users filter and explore raw data and generate some 
-descriptive statistics. This project is created on Aug 14th, 2020.
+The project implements an interactive script in python that allows users to filter and explore raw data and to generate some 
+descriptive statistics. The project helps participants to learn and apply python (together with numpy and pandas) to solve real world 
+data analysis problems. This project is finished on Aug 14th, 2020.
 
 ### Requirements
 The project uses the following programming language and packages:
